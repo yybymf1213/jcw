@@ -1,0 +1,19 @@
+@mixin addline($color){
+    position:relative;
+    &::before{
+        content:"";
+        position:absolute;
+        bottom:0;
+        left:0;
+        height:1px;
+        width:100%;
+        background:$color;
+        // @media (-webkit-min-device-pixel-ratio: 1.5){
+        //     transform:scaleY(.667);
+        // }
+        // @media (-webkit-min-device-pixel-ratio: 2){
+        //     transform:scaleY(.5);
+        // }
+    }
+    
+}
